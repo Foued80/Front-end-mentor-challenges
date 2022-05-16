@@ -1,0 +1,15 @@
+.image{
+    width:100%;
+}
+.card {
+    transition: all .2s ease-in-out;
+    margin-bottom: 0.5rem;
+}
+.card:hover{
+    transform: scale(1.05);
+  }
+  .title{
+      font-size: large;
+      font-weight: 600;
+      color: #2c2c2c;
+  }
