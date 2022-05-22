@@ -48,10 +48,7 @@ function App() {
       </div>
       <div className={classes.attribution}>
         <p>Frontend Mentor Challenges Coded by</p>
-        <a
-          href="https://github.com/Foued80/Front-end-mentor-challenges"
-          target="_blank"
-        >
+        <a href="https://github.com/Foued80/Front-end-mentor-challenges">
           Foued80
         </a>
       </div>
