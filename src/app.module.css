@@ -10,6 +10,9 @@ body{
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,900&display=swap');
+a{
+  text-decoration: none;
+}
 
 header{
   padding:1rem 0 1rem;
