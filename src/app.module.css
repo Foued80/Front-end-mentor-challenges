@@ -31,7 +31,14 @@ header{
   font-size: 1rem;
   
 }
-
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1rem auto;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 .challenges {
   
   width: 100%;

@@ -46,6 +46,12 @@ function App() {
           })
         )}
       </div>
+      <div className={classes.attribution}>
+        <p>Frontend Mentor Challenges Coded by</p>
+        <a href="https://github.com/Foued80" target="_blank">
+          Foued80
+        </a>
+      </div>
     </div>
   );
 }
