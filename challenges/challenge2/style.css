@@ -1,0 +1,146 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	width: 100vw;
+	background-color: hsl(0, 0%, 95%);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-family: 'Lexend Deca', sans-serif;
+	color: white;
+}
+
+.card {
+	width: 88%;
+	display: flex;
+	border-radius: 15px;
+	overflow: hidden;
+	margin-top: 50px;
+	flex-direction: column;
+}
+
+.card_item {
+	flex:1;	
+	padding: 2rem 3rem;
+	background-color: hsl(184, 100%, 22%);
+	display: flex;	
+	flex-direction: column;
+	align-items: center;	
+	justify-content: space-between;
+}
+
+.card_item:first-child {
+	background-color: hsl(31, 77%, 52%);
+}
+
+.card_item:last-child {
+	background-color: hsl(179, 100%, 13%);
+}
+
+img {	
+	align-self: flex-start;
+	height: 3rem;
+	margin: 1rem 0;
+	
+}
+
+h1 {
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 2.25rem;
+	text-transform: uppercase;
+	margin:1rem 0;	
+	color: hsl(0, 0%, 95%);	
+	align-self: flex-start;
+}
+
+p {
+	margin: 1rem 0;
+	color: hsla(0, 0%, 95%, 0.75);
+	align-self: flex-start;
+	
+}
+
+.btn {
+	display: block;
+	margin: 1rem 0;
+	font-size: 1rem;
+	padding: 0.675rem 1.25rem;
+	border-radius: 35px;
+	border: 2px solid white;
+	background-color: white;
+	color: hsl(184, 100%, 22%);	
+	align-self: flex-start;
+	justify-self: flex-end;
+	
+}
+
+.card_item:first-child .btn {
+	color: hsl(31, 77%, 52%);
+}
+
+.card_item:last-child .btn {
+	color: hsl(179, 100%, 13%);
+}
+
+.card_item .btn:hover {
+	background-color: rgba(255, 255, 255, 0);
+	cursor: pointer;
+	color: hsl(0, 0%, 95%);
+	border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media (min-width:768px){
+	.card {
+		width: 88%;		
+		margin-top: 0;
+		flex-direction: row;
+	}
+	.card_item {
+		flex:1;	
+		padding: 2rem 2rem;	
+	}
+		
+	img {	
+		height: 2.5rem;			
+	}
+
+	h1 {		
+		font-size: 1.875rem;	
+	}
+
+}
+
+
+@media (min-width:1400px){
+	.card {
+		width: 835px;	
+		
+	}
+	.card_item {
+		flex:1;	
+		padding: 2rem 2.5rem;	
+	}
+		
+	img {	
+		height: 2.35rem;			
+	}
+
+	h1 {		
+		font-size: 1.875rem;	
+	}
+
+}

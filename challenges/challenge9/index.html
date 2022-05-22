@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="section1">
+        <h1>
+          Learn to code by watching others
+        </h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <section class="section2">
+        <div class="ads">
+          <p><span>Try it free 7 days </span>then $20/mo. thereafter</p>
+        </div>
+        <div class="card" id="myCard">
+          <form method="get" action="/" novalidate>
+            <input
+              type="text"
+              id="fname"
+              placeholder="First Name"
+              autocomplete="given-name"
+            />
+            <div class="error-text">First Name cannot be empty</div>
+            <input
+              type="text"
+              id="lname"
+              placeholder="Last Name"
+              autocomplete="family-name"
+            />
+            <div class="error-text">Last Name cannot be empty</div>
+            <input
+              type="email"
+              id="myEmail"
+              placeholder="Email adress"
+              autocomplete="email"
+            />
+            <div class="error-text">Looks like this is not an Email</div>
+            <input
+              type="password"
+              id="myPassword"
+              placeholder="password"
+              autocomplete="current-password"
+            />
+            <div class="error-text">Password cannot be empty</div>
+            <button id="myButton" type="submit">Claim your free trial</button>
+            <h6>
+              By clicking the button, you are agreeing to our
+              <span> Terms and Services</span>
+            </h6>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/Foued80" target="_blank">Foued80</a>. back
+        to <a href="/">All challenges</a>.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

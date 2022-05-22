@@ -1,0 +1,392 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	width: 100vw;
+	min-height: 100vh;
+	font-size: 16px;
+}
+
+.container {
+	margin: 0 auto 1rem auto;
+	min-width: 320px;
+	max-width: 375px;
+	min-height: 100vh;
+}
+
+.container_grid {
+	background-color: hsl(253, 100%, 98.4%);
+	display: -ms-grid;
+	display: grid;
+	min-height: 100vh;
+	width: 100%;
+	-ms-grid-columns: 100%;
+	grid-template-columns: 100%;
+	-ms-grid-rows: minmax(56px, 10.625vh) minmax(130px, 220px) minmax(300px, auto);
+	grid-template-rows: minmax(56px, 10.625vh) minmax(130px, 220px) minmax(300px, auto);
+}
+
+.container_grid > *:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+
+.container_grid > *:nth-child(2) {
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+}
+
+.container_grid > *:nth-child(3) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+}
+
+.logo {
+	-ms-grid-column: 1;
+	grid-column: 1;
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 1;
+	grid-row: 1/2;
+	background-image: url(images/logo.svg);
+	background-repeat: no-repeat;
+	background-position: left 1rem center;
+	background-size: auto 40%;
+}
+
+.hero {
+	-ms-grid-column: 1;
+	grid-column: 1;
+	-ms-grid-row: 2;
+	-ms-grid-row-span: 1;
+	grid-row: 2/3;
+	background-image: url(images/hero-mobile.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+}
+
+.form {
+	width: 100%;
+	-ms-grid-column: 1;
+	grid-column: 1;
+	-ms-grid-row: 3;
+	-ms-grid-row-span: 1;
+	grid-row: 3/4;
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.form_title span {
+	display: block;
+	color: hsl(0, 36%, 70%);
+	font-size: 2rem;
+	font-weight: 300;
+	letter-spacing: 0.5rem;
+	text-transform: uppercase;
+	margin-bottom: 0.2rem;
+}
+
+.form_title h1 {
+	color: hsl(0, 6%, 24%);
+	font-size: 2.1rem;
+	font-weight: 400;
+	letter-spacing: 0.5rem;
+	text-transform: uppercase;
+}
+
+.form_text p {
+	color: hsl(0, 36%, 70%);
+	font-weight: 300;
+}
+
+.form_email {
+	width: 100%;
+	height: auto;
+	text-align: left;
+	margin-bottom: 1rem;
+}
+
+.input_container {
+	position: relative;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+input {
+	width: 100%;
+	background-color: hsl(253, 100%, 98.4%);
+	color: hsl(0, 36%, 70%);
+	padding: 0.5rem 1rem;
+	border: 1px solid hsl(0, 36%, 70%);
+	outline: none;
+	line-height: 1.5rem;
+	font-size: 0.7rem;
+	border-radius: 2rem;
+}
+
+input::-webkit-input-placeholder {
+	color: hsl(0, 36%, 70%);
+}
+
+input::-moz-placeholder {
+	color: hsl(0, 36%, 70%);
+}
+
+input:-ms-input-placeholder {
+	color: hsl(0, 36%, 70%);
+}
+
+input::-ms-input-placeholder {
+	color: hsl(0, 36%, 70%);
+}
+
+input::placeholder {
+	color: hsl(0, 36%, 70%);
+}
+
+.input_container button {
+	border: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 55px;
+	height: 100%;
+	border-radius: 1.5rem;
+	-webkit-box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.2);
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	background-image: url(images/icon-arrow.svg), -o-linear-gradient(315deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	background-image: url(images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 30%, 100%;
+}
+
+.text_alert {
+	position: absolute;
+	font-size: 0.6rem;
+	line-height: 1.5rem;
+	padding-left: 1rem;
+	visibility: hidden;
+}
+
+.invalid_text_alert {
+	visibility: visible;
+	color: hsl(0, 93%, 68%);
+}
+
+.icon_error {
+	visibility: hidden;
+}
+
+.input_container .icon_error img {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	right: 65px;
+	width: 16px;
+	height: 16px;
+}
+
+.invalid_input {
+	border: 1px solid hsl(0, 93%, 68%);
+}
+
+.invalid_icon_error {
+	visibility: visible;
+}
+
+@media screen and (min-width:1440px) {
+	body {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.container {
+		max-width: none;
+		min-height: 0;
+		min-width: 0;
+		width: 1440px;
+		height: 800px;
+		-webkit-box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+		        box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+	}
+	.container_grid {
+		display: -ms-grid;
+		display: grid;
+		height: 800px;
+		min-height: 0;
+		width: 100%;
+		-ms-grid-columns: 1fr 610px;
+		grid-template-columns: 1fr 610px;
+		-ms-grid-rows: 2fr 8fr;
+		grid-template-rows: 2fr 8fr;
+		background-color: transparent;
+		background-image: url(images/bg-pattern-desktop.svg);
+		background-repeat: no-repeat;
+		background-position: top left;
+		background-size: 830px 100%;
+	}
+	.container_grid > *:nth-child(1) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+	}
+	.container_grid > *:nth-child(2) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 2;
+	}
+	.container_grid > *:nth-child(3) {
+		-ms-grid-row: 2;
+		-ms-grid-column: 1;
+	}
+	.container_grid > *:nth-child(4) {
+		-ms-grid-row: 2;
+		-ms-grid-column: 2;
+	}
+	.logo {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1/2;
+		background-position: left 10rem center;
+		background-size: auto 30%;
+	}
+	.hero {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2/3;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 2;
+		grid-row: 1/3;
+		background-image: url(images/hero-desktop.jpg);
+		background-size: auto 100%;
+	}
+	.form {
+		width: 80%;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1/2;
+		-ms-grid-row: 2;
+		-ms-grid-row-span: 1;
+		grid-row: 2/3;
+		text-align: left;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+		padding-left: 10rem;
+	}
+	.form_title span {
+		font-size: 4rem;
+		letter-spacing: 1rem;
+		margin-bottom: 0.2rem;
+	}
+	.form_title h1 {
+		font-size: 4rem;
+		font-weight: 600;
+		letter-spacing: 1rem;
+	}
+	.form_text p {
+		font-weight: 400;
+		font-size: 1.3rem;
+		line-height: 2rem;
+	}
+	.form_email {
+		width: 100%;
+		height: 60px;
+		text-align: left;
+	}
+	.input_container {
+		position: relative;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.input_container input {
+		width: 100%;
+		background-color: hsl(253, 100%, 98.4%);
+		color: hsl(0, 36%, 70%);
+		padding: 1rem 2rem;
+		border: 1px solid hsl(0, 36%, 70%);
+		outline: none;
+		font-size: 1rem;
+		border-radius: 2rem;
+	}
+	.input_container input::-webkit-input-placeholder {
+		color: hsl(0, 36%, 70%);
+	}
+	.input_container input::-moz-placeholder {
+		color: hsl(0, 36%, 70%);
+	}
+	.input_container input:-ms-input-placeholder {
+		color: hsl(0, 36%, 70%);
+	}
+	.input_container input::-ms-input-placeholder {
+		color: hsl(0, 36%, 70%);
+	}
+	.input_container input::placeholder {
+		color: hsl(0, 36%, 70%);
+	}
+	.input_container button {
+		margin-left: -2rem;
+		width: 90px;
+		border-radius: 3rem;
+		background-repeat: no-repeat, no-repeat;
+		background-position: center;
+		background-size: auto 40%, 100%;
+	}
+	.input_container button:hover {
+		-webkit-transform: scale(1.05);
+		    -ms-transform: scale(1.05);
+		        transform: scale(1.05);
+		background: url(images/icon-arrow.svg), -o-linear-gradient(315deg, hsl(0, 80%, 92%), hsl(0, 74%, 80%));
+		background: url(images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 80%, 92%), hsl(0, 74%, 80%));
+		background-repeat: no-repeat, no-repeat;
+		background-position: center;
+		background-size: auto 40%, 100%;
+	}
+	.input_container div+img {
+		width: auto;
+		height: 50%;
+	}
+	.text_alert {
+		font-size: 0.8rem;
+		line-height: 1.8rem;
+		padding-left: 2rem;
+	}
+	.input_container .icon_error img {
+		right: 105px;
+	}
+}

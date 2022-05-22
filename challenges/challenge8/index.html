@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_grid">
+        <div class="logo"></div>
+        <div class="hero"></div>
+        <div class="form">
+          <div class="form_title">
+            <span>We're</span>
+            <h1>coming soon</h1>
+          </div>
+          <div class="form_text">
+            <p>
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+          </div>
+          <div class="form_email">
+            <form
+              id="form"
+              action="/formHandler.html"
+              method="get"
+              name="form"
+              novalidate
+            >
+              <div class="input_container">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                  maxlength="33"
+                  oninput="inputHandler()"
+                />
+                <button
+                  name="button"
+                  id="button"
+                  type="submit"
+                  aria-label="submitbutton"
+                ></button>
+                <div id="icon_error" class="icon_error">
+                  <img src="images/icon-error.svg" alt="" />
+                </div>
+                <div id="text_alert" class="text_alert">
+                  Please provide a valid Email
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/Foued80" target="_blank">Foued80</a>. back
+        to <a href="/">All challenges</a>.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

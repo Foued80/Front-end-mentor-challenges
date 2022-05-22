@@ -1,0 +1,177 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	font-family: 'Kumbh Sans', sans-serif;
+	background-color: hsl(185, 75%, 39%);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	
+}
+.container{
+    min-width: 1440px;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+
+
+.pattern_top,
+.pattern_bottom {
+	position: relative;	
+	width: 100%;
+    height: auto;
+	top: 0;
+	left: 0;
+}
+
+.pattern_top>img {
+	position: absolute;
+	top: -600px;
+	left: -300px;
+	z-index: -1;
+}
+
+.pattern_bottom>img {
+	position: absolute;
+	top: 180px;
+	left: 720px;
+	z-index: -1;
+}
+
+.card {
+	width: 350px;
+	height: 375px;
+	border-radius: 20px;
+	background-color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	overflow: hidden;
+	position: relative;
+	color: hsl(229, 23%, 23%);
+	-webkit-box-shadow: 0 3px 20px 25px rgba(0, 0, 0, 0.05);
+	        box-shadow: 0 3px 20px 25px rgba(0, 0, 0, 0.05);
+}
+
+.card_top {
+	height: 142px;
+	width: 100%;
+	background-image: url(images/bg-pattern-card.svg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.card_avatar {
+	width: 100px;
+	height: 100px;
+	background-image: url(images/amanda-seyfried.jpg);
+	border-radius: 50%;
+	border: 6px solid white;
+	position: absolute;
+	-webkit-transform: translatey(92px);
+	    -ms-transform: translatey(92px);
+	        transform: translatey(92px);
+}
+
+.card_info {
+	width: 100%;
+	height: 145px;
+	text-align: center;
+	padding-top: 60px;
+	border-bottom: 1px solid hsl(0, 0%, 59%);
+	line-height: 28px;
+}
+
+.card_info:first-child {
+	font-size: 1.3rem;
+}
+
+#name {
+	font-size: 1.3rem;
+}
+
+strong,
+span {
+	font-weight: 700;
+}
+
+.card_footer {
+	width: 100%;
+	height: 88px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	line-height: 24px;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	text-align: center;
+}
+
+.card_footer_stats>p {
+	font-size: 0.9rem;
+}
+
+.card_footer_stats>p>strong {
+	font-size: 1.5rem;
+}
+
+.attribution {
+	margin-top: 20px;
+}
+
+@media (max-width: 375px) {
+	body {
+		width: 100vw;
+		height: 100vh;
+	}
+    .container{
+        min-width: 375px;
+    }
+   
+    .pattern_top>img {
+      
+        width:160%;
+        height: auto;;	
+		top: -400px;
+		left: -450px;
+        
+	}
+	.pattern_bottom>img {	
+        width:160%;
+        height: auto;;	
+		top: 220px;
+		left: 160px;
+		
+	}
+	.card {
+		width: 85%;
+	}
+}

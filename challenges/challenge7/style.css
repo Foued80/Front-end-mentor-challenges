@@ -1,0 +1,192 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	min-height: 100vh;
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+	background-color: hsl(0, 0%, 98%);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.container {
+	width: min(90%, 300px);
+	margin-top: 5rem;
+}
+
+.card {
+	width: 100%;
+}
+
+.header {
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+	color: hsl(234, 12%, 34%);
+}
+
+.header p:first-child {
+	color: hsl(229, 6%, 66%);
+	font-weight: 400;
+	font-size: 1.2rem;
+}
+
+.header p:last-child {
+	text-align: center;
+	margin-top: 0.8rem;
+	font-weight: 400;
+	color: hsl(229, 6%, 66%);
+	font-size: 0.8rem;
+}
+
+.card {
+	width: 100%;
+	height: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-bottom: 24px;
+}
+
+.card_item_1 {
+	border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.card_item_2 {
+	border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.card_item_3 {
+	border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card_item_4 {
+	border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.card_item {
+	border-radius: 5px;
+	overflow: hidden;
+	width: 100%;
+	background-color: white;
+	padding: 15px 20px;
+	margin-bottom: 2rem;
+	-webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card_item_center {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.card_item_title {
+	text-align: left;
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: hsl(234, 12%, 34%);
+}
+
+.card_item_text {
+	text-align: left;
+	margin-top: 0.6rem;
+	font-weight: 400;
+	color: hsl(229, 6%, 66%);
+	font-size: 0.8rem;
+	margin-bottom: 2rem;
+}
+
+.card_item_img {
+	width: 100%;
+}
+
+.card_item_img img {
+	height: 50px;
+	width: auto;
+	float: right;
+}
+
+@media (min-width:900px) {
+	.container {
+		width: min(1100px, 95%);
+	}
+	.header {
+		max-width: 450px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.card {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	}
+	.card_item {
+		-ms-flex-preferred-size: 32%;
+		    flex-basis: 32%;
+		margin-bottom: 0;
+        -webkit-transition:0.2s;
+        -o-transition:0.2s;
+        transition:0.2s;
+	}
+	.card_item_center {
+		-ms-flex-preferred-size: 32%;
+		    flex-basis: 32%;
+	}
+	.card_item_center .card_item.card_item_2 {
+		margin-bottom: 1rem;
+	}
+    .card_item:hover{
+        -webkit-transform:scale(1.05);
+            -ms-transform:scale(1.05);
+                transform:scale(1.05);
+    }
+}
