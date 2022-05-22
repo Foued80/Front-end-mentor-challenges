@@ -4,6 +4,7 @@ import data from "./data/data.js";
 import Challenges from "./components/Challenges";
 import Filter from "./components/Filter";
 import { useState, useEffect } from "react";
+import peach_cat from "./assets/img/peach-cat.gif";
 
 function App() {
   const [allChallenges, setAllChallenges] = useState(data);
@@ -28,11 +29,7 @@ function App() {
       <div className={classes.challenges}>
         {filteredChallenges.length === 0 ? (
           <div className={classes.empty_wrapper}>
-            <img
-              className={classes.empty}
-              src="/img/peach-cat.gif"
-              alt="empty"
-            />
+            <img className={classes.empty} src={peach_cat} alt="empty" />
             <div> Come back later</div>
           </div>
         ) : (
