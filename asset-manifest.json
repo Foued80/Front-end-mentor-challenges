@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Front-end-mentor-challenges/static/css/main.4e761357.css",
+    "main.css": "/Front-end-mentor-challenges/static/css/main.c0cc02f8.css",
     "main.js": "/Front-end-mentor-challenges/static/js/main.28515ada.js",
     "static/media/peach-cat.gif": "/Front-end-mentor-challenges/static/media/peach-cat.ba933a36432a15ac6f06.gif",
     "static/media/coding.png": "/Front-end-mentor-challenges/static/media/coding.ad02d63870968fd4d1e7.png",
     "index.html": "/Front-end-mentor-challenges/index.html",
-    "main.4e761357.css.map": "/Front-end-mentor-challenges/static/css/main.4e761357.css.map",
+    "main.c0cc02f8.css.map": "/Front-end-mentor-challenges/static/css/main.c0cc02f8.css.map",
     "main.28515ada.js.map": "/Front-end-mentor-challenges/static/js/main.28515ada.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e761357.css",
+    "static/css/main.c0cc02f8.css",
     "static/js/main.28515ada.js"
   ]
 }
