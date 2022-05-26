@@ -1,0 +1,167 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto+Serif:ital,opsz,wght@1,8..144,900&display=swap');
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    min-height: 100vh;    
+    -webkit-box-align: center;    
+        -ms-flex-align: center;    
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    gap:2rem;
+}
+
+.card{
+    width:304px;
+    margin-top: 62px;
+    background-color: hsl(216, 50%, 16%);
+    color:white;
+    padding:25px;
+    border-radius: 16px;
+}
+
+.card_top_container{
+    position:relative;    
+    width:100%;  
+    aspect-ratio: 1 / 1;      
+    margin-bottom: 16px; 
+    border-radius: 10px;
+    overflow: hidden;   
+}
+.card_top{
+    width:100%;
+    height: auto;  
+}
+.card_view{
+    position:absolute;
+    top:0;
+    width:100%;
+    height: 100%;       
+    background-color: hsla(178, 100%, 50%,0.5);         
+    display:-webkit-box;         
+    display:-ms-flexbox;         
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity:0;
+    z-index: 10;  
+    gap:0;    
+}
+
+.card_title{
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.card_description{
+    margin-bottom: 16px;
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 15px;
+}
+.card_details{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 14px;
+    font-size: 15px;
+    border-bottom: 1px solid hsla(215, 51%, 70%,0.2);
+    margin-bottom: 16px;
+}
+.card_details_eth{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap:6px;
+    color:hsl(178, 100%, 50%);
+}
+.card_details_time{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap:6px;
+    color:hsl(215, 51%, 70%);
+
+}
+.card_author{
+display:-webkit-box;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+gap: 14px;
+font-size: 14px;
+}
+.card_author_avatar{
+    width:2rem;
+    height: auto;
+    border-radius: 50%;
+    border:1px solid hsl(0, 0%, 100%);
+}
+.card_author_name{
+    color:hsl(215, 51%, 70%);
+}
+.card_author_high{    
+    font-weight: 400;
+    color:white;
+    
+}
+
+@media (min-width: 376px) { 
+    
+    .card{
+        width:350px;
+        padding:28px;
+        margin-top: 150px;
+    }
+    .card_title:hover,.card_author_high:hover{
+        color:hsl(178, 100%, 50%);
+        cursor: pointer;
+    }
+    .card_view:hover{
+        opacity:1;
+        cursor: pointer;
+    }
+    
+ }
