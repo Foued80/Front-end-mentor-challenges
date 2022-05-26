@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card_top_container">
+        <div class="card_view">
+          <img class="view" src="./images/icon-view.svg" alt="view icon" />
+        </div>
+        <img
+          class="card_top"
+          src="./images/image-equilibrium.jpg"
+          alt="image of equilibrium"
+        />
+      </div>
+
+      <div class="card_title">Equilibrium #3429</div>
+      <div class="card_description">
+        Our Equilibrium collection promotes balance and calm.
+      </div>
+      <div class="card_details">
+        <div class="card_details_eth">
+          <img
+            src="./images/icon-ethereum.svg"
+            alt="etherium"
+            class="card_price_logo"
+          />
+          <div class="card_details_price">0.041 ETH</div>
+        </div>
+        <div class="card_details_time">
+          <img
+            src="./images/icon-clock.svg"
+            alt="clock"
+            class="card_details_clock"
+          />
+          <div class="card_details_eta">3 days left</div>
+        </div>
+      </div>
+      <div class="card_author">
+        <img
+          src="./images/image-avatar.png"
+          alt=""
+          class="card_author_avatar"
+        />
+
+        <div class="card_author_name">
+          Creation of <span class="card_author_high">Jules Wyvern</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/Front-end-mentor-challenges" target="_blank"
+        >Foued80</a
+      >. back to
+      <a href="https://foued80.github.io/Front-end-mentor-challenges"
+        >All challenges</a
+      >.
+    </div>
+  </body>
+</html>

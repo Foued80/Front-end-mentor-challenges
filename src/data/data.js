@@ -95,6 +95,30 @@ const challenges = [
     preview: "desktop-design.jpg",
     title: "Fylo dark theme landing page",
   },
+  {
+    id: "17",
+    difficulty: 0,
+    preview: "desktop-design.jpg",
+    title: "QR code component",
+  },
+  {
+    id: "18",
+    difficulty: 0,
+    preview: "desktop-design.jpg",
+    title: "Order summary component",
+  },
+  {
+    id: "19",
+    difficulty: 0,
+    preview: "desktop-design.jpg",
+    title: "NFT preview card component",
+  },
+  {
+    id: "20",
+    difficulty: 0,
+    preview: "desktop-design.jpg",
+    title: "Interactive rating component",
+  },
 ];
 
 export default challenges;
