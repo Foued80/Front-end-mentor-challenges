@@ -119,6 +119,12 @@ const challenges = [
     preview: "desktop-design.jpg",
     title: "Interactive rating component",
   },
+  {
+    id: "21",
+    difficulty: 1,
+    preview: "desktop-design.jpg",
+    title: "Intro section with dropdown navigation",
+  },
 ];
 
 export default challenges;
