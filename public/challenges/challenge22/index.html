@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        font-weight: 700;
+        color: black;
+      }
+      .attribution a {
+        color: hsl(10, 79%, 65%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="balance_wrapper">
+        <div class="balance_info">
+          <div class="balance_title">My balance</div>
+          <div class="balance_total">$921.48</div>
+        </div>
+        <div class="balance_logo"><img src="images/logo.svg" alt="logo" /></div>
+      </div>
+      <div class="graph_card">
+        <div class="graph_heading">Spending - Last 7 days</div>
+        <ul class="graph_bars_wrapper">
+          <li class="graph_bars_item mon">
+            <div class="graph_today_spending">$17.10</div>
+            <div></div>
+            <div>mon</div>
+          </li>
+          <li class="graph_bars_item tue">
+            <div class="graph_today_spending">$34.90</div>
+            <div></div>
+            <div>tue</div>
+          </li>
+          <li class="graph_bars_item wed active">
+            <div class="graph_today_spending">$52.36</div>
+            <div></div>
+            <div>wed</div>
+          </li>
+          <li class="graph_bars_item thu">
+            <div class="graph_today_spending">$31.07</div>
+            <div></div>
+            <div>thu</div>
+          </li>
+          <li class="graph_bars_item fri">
+            <div class="graph_today_spending">$23.38</div>
+            <div></div>
+            <div>fri</div>
+          </li>
+          <li class="graph_bars_item sat">
+            <div class="graph_today_spending">$43.28</div>
+            <div></div>
+            <div>sat</div>
+          </li>
+          <li class="graph_bars_item sun">
+            <div class="graph_today_spending">$25.48</div>
+            <div></div>
+            <div>sun</div>
+          </li>
+        </ul>
+        <div class="balance_footer">
+          <div class="balance_footer_left">
+            <div>Total this month</div>
+            <div>$478.33</div>
+          </div>
+          <div class="balance_footer_right">
+            <div>+2.4%</div>
+            <div>from last month</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      <div>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor. </a
+        >Coded by
+        <a
+          href="https://github.com/Foued80/Front-end-mentor-challenges"
+          target="_blank"
+          >Foued80</a
+        >
+      </div>
+
+      <div>
+        back to
+        <a href="https://foued80.github.io/Front-end-mentor-challenges"
+          >All challenges</a
+        >.
+      </div>
+    </div>
+  </body>
+</html>

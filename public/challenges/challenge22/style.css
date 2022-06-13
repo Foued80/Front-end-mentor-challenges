@@ -1,0 +1,257 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+*{
+    padding:0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    background-color: hsl(27, 66%, 92%);
+    min-height: 100vh;
+    width: 100vw;    
+}
+ul{
+    list-style: none;
+}
+.container{
+    width:100%;
+    max-width: 570px;
+    padding: 0 1rem;
+    margin: 4rem auto 0;
+}
+.balance_wrapper{
+    width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.7rem 1.5rem;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 10px;
+    color:white;
+}
+.balance_tite{
+    font-weight: 400;
+}
+.balance_total{
+    font-size:1.5rem;
+    font-weight: 700;
+}
+.graph_card{
+    width:100%;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 2rem 1.5rem;
+    gap:2rem;
+    margin-bottom: 2rem;
+}
+.graph_heading{
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.graph_bars_wrapper{
+    height: 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    color: hsl(28, 10%, 53%);
+    padding-bottom: 2rem;
+    border-bottom: 1px solid hsl(28, 10%, 53%);
+    font-size: 0.75rem;   
+}
+.graph_bars_wrapper li{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap:0.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.graph_bars_wrapper li div:nth-child(2){
+    border-radius: 4px;
+    background-color: hsl(10, 79%, 65%);
+    width:32px;
+}
+.graph_bars_item.active div:nth-child(2){
+    background-color: hsl(186, 34%, 60%);
+}
+
+.mon div:nth-child(2){    
+    height: calc(17.10 * 2.85px);
+    width: 100%;
+}
+.tue div:nth-child(2){    
+    height: calc(34.90 * 2.85px);
+    width: 100%;
+}
+.wed div:nth-child(2){    
+    height: calc(52.36 * 2.85px);
+    width: 100%;
+    
+}
+.thu div:nth-child(2){    
+    height: calc(31.07 * 2.85px);
+    width: 100%;
+}
+.fri div:nth-child(2){    
+    height: calc(23.38 * 2.85px);
+    width: 100%;
+}
+.sat div:nth-child(2){    
+    height: calc(43.28 * 2.85px);
+    width: 100%;
+}
+.sun div:nth-child(2){    
+    height: calc(25.48 * 2.85px);
+    width: 100%;
+}
+.graph_today_spending{
+    position:relative;
+    top: -10px;
+    color:white;
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 4px;
+    padding:6px 4px;
+    opacity:0;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.graph_today_spending.active + div{    
+    background-color: hsl(186, 34%, 60%);
+}
+.graph_bars_item:hover .graph_today_spending{
+    opacity: 1;
+    top:0;
+}
+.graph_bars_item{
+    cursor: pointer;
+}
+.graph_bars_item.active  > .graph_today_spending{
+    opacity: 1;
+
+}
+.balance_footer{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
+.balance_footer_left div:nth-child(1){
+    color:hsl(28, 10%, 53%);
+}
+.balance_footer_left div:nth-child(2){
+    color:black;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.balance_footer_right div:nth-child(1){
+    color:black;
+    font-weight: 700;
+    text-align: end;
+    
+}
+.balance_footer_right div:nth-child(2){
+    color:hsl(28, 10%, 53%);    
+    
+}
+
+@media screen and (min-width:1400px){
+    body{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .container{
+        width:570px;
+    }
+    .balance_wrapper{
+        padding: 1.9rem 2rem;
+        border-radius: 1rem;
+    }
+    .balance_title{
+        font-size: 1.1rem;
+    }
+    .graph_card{
+        padding:2rem 2.5rem;
+        border-radius: 1rem;
+        gap:4rem;
+    }
+  
+.balance_total{
+    font-size:2rem;    
+}
+.graph_heading{
+    font-size: 2rem;
+}
+.graph_bars_wrapper li div:nth-child(2){
+    width:3rem;
+}
+li.graph_bars_item div:nth-child(3){
+    font-size: 16px;
+}
+.balance_footer_left div:nth-child(1){
+    
+    font-size: 1.15rem;
+}
+.balance_footer_left div:nth-child(2){    
+    font-size: 3rem;    
+}
+.balance_footer_right div:nth-child(1){    
+    font-size: 1.15rem;    
+    text-align: end;
+    
+}
+.balance_footer_right div:nth-child(2){
+    font-size: 1.15rem;
+}
+}
