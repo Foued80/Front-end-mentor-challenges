@@ -131,6 +131,12 @@ const challenges = [
     preview: "desktop-design.jpg",
     title: "expenses chart component main",
   },
+  {
+    id: "23",
+    difficulty: 1,
+    preview: "desktop-design.jpg",
+    title: "Advice generator app",
+  },
 ];
 
 export default challenges;
