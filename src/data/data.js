@@ -137,6 +137,12 @@ const challenges = [
     preview: "desktop-design.jpg",
     title: "Advice generator app",
   },
+  {
+    id: "24",
+    difficulty: 1,
+    preview: "desktop-design.jpg",
+    title: "Time tracking dashboard",
+  },
 ];
 
 export default challenges;
