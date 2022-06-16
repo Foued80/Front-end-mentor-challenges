@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+        margin-bottom: 1rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card profile">
+        <div class="profile_top">
+          <img src="images/image-jeremy.png" alt="" />
+          <div>Report for <span>Jeremy Robson</span></div>
+        </div>
+        <div class="profile_bottom">
+          <div id="daily">Daily</div>
+          <div id="weekly" class="active">Weekly</div>
+          <div id="monthly">Monthly</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card_top work"></div>
+        <div class="card_bottom">
+          <div>
+            Work<img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
+          </div>
+          <div>
+            <div id="work">32hrs</div>
+            <span>Last Week - 36hrs</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_top play"></div>
+        <div class="card_bottom">
+          <div>
+            Play<img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
+          </div>
+          <div>
+            <div id="play">10hrs</div>
+            <span>Last Week - 8hrs</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_top study"></div>
+        <div class="card_bottom">
+          <div>
+            Study<img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
+          </div>
+          <div>
+            <div id="study">4hrs</div>
+            <span>Last Week - 7hrs</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_top exercice"></div>
+        <div class="card_bottom">
+          <div>
+            Exercice<img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
+          </div>
+          <div>
+            <div id="exercice">4hrs</div>
+            <span>Last Week - 5hrs</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_top social"></div>
+        <div class="card_bottom">
+          <div>
+            Social<img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
+          </div>
+          <div>
+            <div id="social">5hrs</div>
+            <span>Last Week - 10hrs</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_top care"></div>
+        <div class="card_bottom">
+          <div>
+            Self Care<img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
+          </div>
+          <div>
+            <div id="care">2hrs</div>
+            <span>Last Week - 2hrs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      <div>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor. </a
+        >Coded by
+        <a
+          href="https://github.com/Foued80/Front-end-mentor-challenges"
+          target="_blank"
+          >Foued80</a
+        >
+      </div>
+
+      <div>
+        back to
+        <a href="https://foued80.github.io/Front-end-mentor-challenges"
+          >All challenges</a
+        >.
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
