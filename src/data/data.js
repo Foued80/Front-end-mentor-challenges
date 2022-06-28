@@ -143,6 +143,12 @@ const challenges = [
     preview: "desktop-design.jpg",
     title: "Time tracking dashboard",
   },
+  {
+    id: "25",
+    difficulty: 2,
+    preview: "desktop-design.jpg",
+    title: "E-commerce product page",
+  },
 ];
 
 export default challenges;
