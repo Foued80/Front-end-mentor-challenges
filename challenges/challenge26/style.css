@@ -127,7 +127,7 @@ nav ul li a {
 }
 
 .main_hero1 {
-	background-image: url("/images/mobile-image-hero-1.jpg");
+	background-image: url("images/mobile-image-hero-1.jpg");
 	background-repeat: no-repeat;
 	width: 100%;
 	aspect-ratio: 375 / 360;
@@ -197,7 +197,7 @@ nav ul li a {
 }
 
 .main_hero2 {
-	background-image: url("/images/image-about-dark.jpg");
+	background-image: url("images/image-about-dark.jpg");
 	background-repeat: no-repeat;
 	width: 100%;
 	aspect-ratio: 420 / 266;
@@ -205,7 +205,7 @@ nav ul li a {
 }
 
 .main_hero3 {
-	background-image: url("/images/image-about-light.jpg");
+	background-image: url("images/image-about-light.jpg");
 	background-repeat: no-repeat;
 	width: 100%;
 	aspect-ratio: 440 / 266;
@@ -348,7 +348,7 @@ nav ul li a {
 		-ms-grid-row: 1;
 		-ms-grid-row-span: 1;
 		grid-row: 1 / 2;
-		background-image: url("/images/desktop-image-hero-1.jpg");
+		background-image: url("images/desktop-image-hero-1.jpg");
 		width: 100%;
 		aspect-ratio: 840 / 534;
 		position: relative;
@@ -410,7 +410,7 @@ nav ul li a {
 		-ms-grid-row: 2;
 		-ms-grid-row-span: 1;
 		grid-row: 2 / 3;
-		background-image: url("/images/image-about-dark.jpg");
+		background-image: url("images/image-about-dark.jpg");
 		width: 100%;
 		aspect-ratio: 420 / 266;
 		background-size: cover;
@@ -423,7 +423,7 @@ nav ul li a {
 		-ms-grid-row: 2;
 		-ms-grid-row-span: 1;
 		grid-row: 2 / 3;
-		background-image: url("/images/image-about-light.jpg");
+		background-image: url("images/image-about-light.jpg");
 		aspect-ratio: 440 / 266;
 		background-size: cover;
 		width: 100%;
