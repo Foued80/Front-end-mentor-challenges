@@ -152,7 +152,7 @@ const challenges = [
   {
     id: "26",
     difficulty: 2,
-    preview: "desktop-design.jpg",
+    preview: "desktop-design-slide-1.jpg",
     title: "Room homepage",
   },
 ];
