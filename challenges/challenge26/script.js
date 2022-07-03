@@ -49,15 +49,15 @@ function handleTabletChange(e) {
   // Check if the media query is true
   if (e.matches) {
     images = [
-      "/images/desktop-image-hero-1.jpg",
-      "/images/desktop-image-hero-2.jpg",
-      "/images/desktop-image-hero-3.jpg",
+      "images/desktop-image-hero-1.jpg",
+      "images/desktop-image-hero-2.jpg",
+      "images/desktop-image-hero-3.jpg",
     ];
   } else {
     images = [
-      "/images/mobile-image-hero-1.jpg",
-      "/images/mobile-image-hero-2.jpg",
-      "/images/mobile-image-hero-3.jpg",
+      "images/mobile-image-hero-1.jpg",
+      "images/mobile-image-hero-2.jpg",
+      "images/mobile-image-hero-3.jpg",
     ];
   }
 }
