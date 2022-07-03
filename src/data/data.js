@@ -149,6 +149,12 @@ const challenges = [
     preview: "desktop-design.jpg",
     title: "E-commerce product page",
   },
+  {
+    id: "26",
+    difficulty: 2,
+    preview: "desktop-design.jpg",
+    title: "Room homepage",
+  },
 ];
 
 export default challenges;
