@@ -155,6 +155,12 @@ const challenges = [
     preview: "desktop-design-slide-1.jpg",
     title: "Room homepage",
   },
+  {
+    id: "28",
+    difficulty: 2,
+    preview: "desktop-design.jpg",
+    title: "launch countdown timer main",
+  },
 ];
 
 export default challenges;
