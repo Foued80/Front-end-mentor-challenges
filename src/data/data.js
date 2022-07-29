@@ -156,10 +156,22 @@ const challenges = [
     title: "Room homepage",
   },
   {
+    id: "27",
+    difficulty: 2,
+    preview: "desktop-design.jpg",
+    title: "Space tourism multi-page website",
+  },
+  {
     id: "28",
     difficulty: 2,
     preview: "desktop-design.jpg",
     title: "launch countdown timer main",
+  },
+  {
+    id: "29",
+    difficulty: 2,
+    preview: "desktop-design.jpg",
+    title: "loopstudios-landing-page-main",
   },
 ];
 
