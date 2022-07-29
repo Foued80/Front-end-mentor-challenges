@@ -169,7 +169,7 @@ const challenges = [
   },
   {
     id: "29",
-    difficulty: 2,
+    difficulty: 1,
     preview: "desktop-design.jpg",
     title: "loopstudios-landing-page-main",
   },
