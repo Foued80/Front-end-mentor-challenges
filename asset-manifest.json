@@ -1,15 +1,15 @@
 {
-  "files": {
-    "main.css": "/Front-end-mentor-challenges/static/css/main.c0cc02f8.css",
-    "main.js": "/Front-end-mentor-challenges/static/js/main.defa791f.js",
-    "static/media/peach-cat.gif": "/Front-end-mentor-challenges/static/media/peach-cat.ba933a36432a15ac6f06.gif",
-    "static/media/coding.png": "/Front-end-mentor-challenges/static/media/coding.ad02d63870968fd4d1e7.png",
-    "index.html": "/Front-end-mentor-challenges/index.html",
-    "main.c0cc02f8.css.map": "/Front-end-mentor-challenges/static/css/main.c0cc02f8.css.map",
-    "main.defa791f.js.map": "/Front-end-mentor-challenges/static/js/main.defa791f.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.c0cc02f8.css",
-    "static/js/main.defa791f.js"
-  ]
+  "main.css": "/Front-end-mentor-challenges/static/css/main.a62de9c5.chunk.css",
+  "main.js": "/Front-end-mentor-challenges/static/js/main.26f70e74.chunk.js",
+  "main.js.map": "/Front-end-mentor-challenges/static/js/main.26f70e74.chunk.js.map",
+  "static/js/1.e7de1209.chunk.js": "/Front-end-mentor-challenges/static/js/1.e7de1209.chunk.js",
+  "static/js/1.e7de1209.chunk.js.map": "/Front-end-mentor-challenges/static/js/1.e7de1209.chunk.js.map",
+  "runtime~main.js": "/Front-end-mentor-challenges/static/js/runtime~main.db28c266.js",
+  "runtime~main.js.map": "/Front-end-mentor-challenges/static/js/runtime~main.db28c266.js.map",
+  "static/media/coding.png": "/Front-end-mentor-challenges/static/media/coding.49a53b91.png",
+  "static/media/peach-cat.gif": "/Front-end-mentor-challenges/static/media/peach-cat.89a56112.gif",
+  "static/css/main.a62de9c5.chunk.css.map": "/Front-end-mentor-challenges/static/css/main.a62de9c5.chunk.css.map",
+  "index.html": "/Front-end-mentor-challenges/index.html",
+  "precache-manifest.0f9555f952a1a902fe0bb9f158cada86.js": "/Front-end-mentor-challenges/precache-manifest.0f9555f952a1a902fe0bb9f158cada86.js",
+  "service-worker.js": "/Front-end-mentor-challenges/service-worker.js"
 }
