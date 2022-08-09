@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./challenges.module.css";
-import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 
 function Challenges(props) {
   return (

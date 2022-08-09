@@ -5,6 +5,7 @@ import Challenges from "./components/Challenges";
 import Filter from "./components/Filter";
 import { useState, useEffect } from "react";
 import peach_cat from "./assets/img/peach-cat.gif";
+import React from "react";
 
 function App() {
   const [allChallenges, setAllChallenges] = useState(data);

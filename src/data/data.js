@@ -173,6 +173,12 @@ const challenges = [
     preview: "desktop-design.jpg",
     title: "loopstudios-landing-page-main",
   },
+  {
+    id: "30",
+    difficulty: 1,
+    preview: "desktop-design.jpg",
+    title: "insure-landing-page-master",
+  },
 ];
 
 export default challenges;
